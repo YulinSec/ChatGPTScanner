@@ -1,0 +1,8 @@
+tmp/*
+go-sec-code
+*.tmp
+.vscode
+__debug_bin
+static/upload/*
+static/unzip/*
+cmd/*/*.json

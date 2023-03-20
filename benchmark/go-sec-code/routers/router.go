@@ -1,0 +1,51 @@
+package routers
+
+import (
+	"go-sec-code/controllers"
+
+	beego "github.com/beego/beego/v2/server/web"
+)
+
+func init() {
+	beego.Router("/", &controllers.MainController{})
+	beego.Router("/favicon.ico", &controllers.FaviconController{})
+	beego.Router("/commandInject/vuln", &controllers.CommandInjectVuln1Controller{})
+	beego.Router("/commandInject/vuln/host", &controllers.CommandInjectVuln2Controller{})
+	beego.Router("/commandInject/vuln/git", &controllers.CommandInjectVuln3Controller{})
+	beego.Router("/commandInject/safe", &controllers.CommandInjectSafe1Controller{})
+	beego.Router("/cors/vuln/reflect", &controllers.CorsVuln1Controller{})
+	beego.Router("/cors/vuln/any-origin-with-credential", &controllers.CorsVuln2Controller{})
+	beego.Router("/cors/safe", &controllers.CorsSafe1Controller{})
+	beego.Router("/crlfInjection/safe", &controllers.CRLFSafe1Controller{})
+	beego.Router("/fileUpload/vuln", &controllers.FileUploadVuln1Controller{})
+	beego.Router("/fileUpload/safe", &controllers.FileUploadSafe1Controller{})
+	beego.Router("/jsonp/vuln/noCheck", &controllers.JsonpVuln1Controller{})
+	beego.Router("/jsonp/vuln/emptyReferer", &controllers.JsonpVuln1Controller{})
+	beego.Router("/jsonp/safe", &controllers.JsonpSafe1Controller{})
+	beego.Router("/pathTraversal/vuln", &controllers.PathTraversalVuln1Controller{})
+	beego.Router("/pathTraversal/vuln/clean", &controllers.PathTraversalVuln2Controller{})
+	beego.Router("/pathTraversal/safe/filter", &controllers.PathTraversalSafe1Controller{})
+	beego.Router("/pathTraversal/safe/check", &controllers.PathTraversalSafe2Controller{})
+	beego.Router("/sqlInjection/native/vuln/integer", &controllers.SqlInjectionVuln1Controller{})
+	beego.Router("/sqlInjection/native/vuln/string", &controllers.SqlInjectionVuln2Controller{})
+	beego.Router("/sqlInjection/orm/vuln/xorm", &controllers.SqlInjectionVuln3Controller{})
+	beego.Router("/sqlInjection/generator/vuln/squirrel", &controllers.SqlInjectionVuln4Controller{})
+	beego.Router("/sqlInjection/native/safe/integer", &controllers.SqlInjectionSafe1Controller{})
+	beego.Router("/sqlInjection/native/safe/string", &controllers.SqlInjectionSafe2Controller{})
+	beego.Router("/sqlInjection/orm/safe/beego", &controllers.SqlInjectionSafe3Controller{})
+	beego.Router("/ssrf/vuln", &controllers.SSRFVuln1Controller{})
+	beego.Router("/ssrf/vuln/obfuscation", &controllers.SSRFVuln2Controller{})
+	beego.Router("/ssrf/vuln/302", &controllers.SSRFVuln3Controller{})
+	beego.Router("/ssrf/safe/whitelists", &controllers.SSRFSafe1Controller{})
+	beego.Router("/ssti/vuln", &controllers.SSTIVuln1Controller{})
+	beego.Router("/ssti/safe", &controllers.SSTISafe1Controller{})
+	beego.Router("/xss/vuln", &controllers.XSSVuln1Controller{})
+	beego.Router("/xss/vuln/store", &controllers.XSSVuln2Controller{})
+	beego.Router("/xss/vuln/svg", &controllers.XSSVuln3Controller{})
+	beego.Router("/xss/vuln/pdf", &controllers.XSSVuln4Controller{})
+	beego.Router("/xss/safe", &controllers.XSSSafe1Controller{})
+	beego.Router("/xss/safe/svg", &controllers.XSSSafe2Controller{})
+	beego.Router("/xxe/vuln", &controllers.XXEVuln1Controller{})
+	beego.Router("/xxe/safe", &controllers.XXESafe1Controller{})
+	beego.Router("/zipslip/vuln", &controllers.ZipSlipVuln1Controller{})
+}

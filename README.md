@@ -76,10 +76,13 @@ cmd.CombinedOutput()
 ```
 
 ## 🚀 Install
+
+Python 3.8 or above
+
 ```
-git clone https://github.com/cokeBeer/ChatGPTScan
+git clone https://github.com/YulinSec/ChatGPTScanner
 cd ChatGPTScan
-pip install -r requirements
+pip install -r requirements.txt
 ```
 ## 🔧 Usage
 ```

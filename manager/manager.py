@@ -41,7 +41,7 @@ def need_prompt_3(sink: str, format=DEFUALT_TAINT_FORMAT) -> str:
     return NEED_PREFIX + NEED_PROMPT_3.format(sink, format)
 
 
-def match_include(path: str, include: list[str]):
+def match_include(path: str, include: typing.List[str]):
     if len(include) == 0:
         return True
     for v in include:
@@ -77,7 +77,7 @@ class Manager():
         openai.proxy = proxy
 
     # ask by src, use with load_one
-    def ask_src(self, src: list[str]):
+    def ask_src(self, src: typing.List[str]):
         messages = [
             {"role": "system", "content": SYSTEM_PROMPT_1}]
         for chunk in src:

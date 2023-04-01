@@ -1,4 +1,5 @@
-def taint_sink_scan(root:str, language:list[str], sink:str, include=[], exclude=[],  key="", proxy="", dry=False):
+import typing
+def taint_sink_scan(root:str, language:typing.List[str], sink:str, include=[], exclude=[],  key="", proxy="", dry=False):
     import manager
     import loader
     mgr = manager.Manager()

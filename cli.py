@@ -1,5 +1,6 @@
 import module
 import utils
+import typing
 
 
 class ChatGPTScan():
@@ -28,7 +29,7 @@ class ChatGPTScan():
 
     """
 
-    def common_scan(self, project: str = "", language: list[str] = [], include: list[str] = [], exclude: list[str] = [],  key="", proxy="", dry=False):
+    def common_scan(self, project: str = "", language: typing.List[str] = [], include: typing.List[str] = [], exclude: typing.List[str] = [],  key="", proxy="", dry=False):
         """
         scan project file and output report
         """
@@ -40,7 +41,7 @@ class ChatGPTScan():
         if res:
             utils.dump(res)
 
-    def taint_sink_scan(self, project: str = "", language: list[str] = [], sink: str = "", include: list[str] = [], exclude: list[str] = [],  key="", proxy="", dry=False):
+    def taint_sink_scan(self, project: str = "", language: typing.List[str] = [], sink: str = "", include: typing.List[str] = [], exclude: typing.List[str] = [],  key="", proxy="", dry=False):
         """
         scan project and output taint path to sink
         """

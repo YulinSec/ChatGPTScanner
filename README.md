@@ -77,10 +77,17 @@ cmd.CombinedOutput()
 
 ## 🚀 Install
 
+<<<<<<< HEAD
 python 3.8 or above
 
 ```
 git clone https://github.com/YulinSec/ChatGPTScanner.git
+=======
+Python 3.8 or above
+
+```
+git clone https://github.com/YulinSec/ChatGPTScanner
+>>>>>>> d9ad8617d9ab1976e3483f4df9e521b668a928e3
 cd ChatGPTScanner
 pip install -r requirements.txt
 ```
@@ -115,3 +122,4 @@ DESCRIPTION
         --proxy         openai api proxy
         --dry           dry run, not send files to ChatGPT
 ```
+note: you should set your OPENAI_API_KEY first!

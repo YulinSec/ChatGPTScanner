@@ -1,4 +1,4 @@
-import os
+import os,typing
 from loader.project import *
 lang_ext = {"go": [".go"], "java": [".java"], "perl": [".pl"], "ruby": [".rb"], "scala": [".scala"], "yaml": [".yaml", ".yml"], "lua": [".lua"], "kotlin": [".kt"], "json": [".json"], "css": [".css"], "rust": [".rs"], "c": [
     ".c"], "c++": [".cpp", ".cc"], "python": [".py"], "javascript": [".js"], "php": [".php"], "html": [".html"], "xml": [".xml"]}

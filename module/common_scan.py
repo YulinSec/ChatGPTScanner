@@ -1,4 +1,5 @@
-def common_scan(root:str, language:list[str], include:list[str], exclude=[], key="", proxy="", dry=False):
+import typing
+def common_scan(root:str, language:typing.List[str], include:typing.List[str], exclude=[], key="", proxy="", dry=False):
     import manager
     mgr = manager.Manager()
     if len(key):

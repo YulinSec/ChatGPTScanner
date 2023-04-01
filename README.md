@@ -81,7 +81,7 @@ Python 3.8 or above
 
 ```
 git clone https://github.com/YulinSec/ChatGPTScanner
-cd ChatGPTScan
+cd ChatGPTScanner
 pip install -r requirements.txt
 ```
 ## 🔧 Usage

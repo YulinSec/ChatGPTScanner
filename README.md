@@ -1,6 +1,8 @@
 # ChatGPTScan
 A white box code scan powered by ChatGPT
 
+> ChatGPTScanner 的网页版本已经开源：https://github.com/YulinSec/ChatGPTScan-SAST
+
 - [ChatGPTScan](#chatgptscan)
   - [🔮 Preview](#-preview)
     - [1. common vulnerabilities scan](#1-common-vulnerabilities-scan)
